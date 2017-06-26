@@ -9,3 +9,15 @@
 ```
 npm i
 ```
+
+- Install typescript globally
+
+```
+npm i typescript -g
+```
+
+- Install tslint globally
+
+```
+npm i tslint -g
+```

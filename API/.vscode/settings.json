@@ -13,5 +13,6 @@
   "debug.inlineValues": true,
   "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "vscode-great-icons",
-  "emmet.useNewEmmet": true
+  "emmet.useNewEmmet": true,
+  "files.eol": "\r\n"
 }
