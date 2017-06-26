@@ -1,2 +1,3 @@
 # planner
-plan your life efficiently
+
+Consists of two parts: UI and API.
