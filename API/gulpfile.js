@@ -2,7 +2,17 @@ var gulp = require('gulp');
 var tsc = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
 var nodemon = require('gulp-nodemon');
+var tslint = require('gulp-tslint');
 var del = require('del');
+
+gulp.task('tslint', () => {
+  return gulp.src('./src/**')
+    .pipe(tslint({
+      formatter: "prose",
+      configuration: 'tslint.json'
+    }))
+    .pipe(tslint.report());
+});
 
 gulp.task('clear', () => {
   del('dist/**', { force: true });

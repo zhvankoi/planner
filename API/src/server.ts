@@ -1,16 +1,16 @@
 import * as express from 'express';
 
-import * as plan from './actions/plan-item';
+import * as planItem from './actions/plan-item';
 
 let app = express();
 
-plan.init(app);
+planItem.init(app);
 
 app.get('/', (req, res) => {
   res.send('planner app');
 });
 
-app.listen(3000, (): void => {
+app.listen(3000, () => {
   console.log('Server started. Port: 3000 (localhost:3000)');
 });
 
